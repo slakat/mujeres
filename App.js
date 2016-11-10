@@ -11,7 +11,7 @@
     "ngResource"
   ]);
 
-  App.config(function ($routeProvider) {
+  App.config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/view1', {
            templateUrl: 'view/view1.html'
@@ -20,6 +20,7 @@
            templateUrl: 'view/view2.html'
       })
       .otherwise({redirectTo : 'view1'});
+
   });
 
 }());
